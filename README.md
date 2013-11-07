@@ -1,5 +1,7 @@
 # Aptible::Tasks
 
+[![Build Status](https://travis-ci.org/aptible/aptible-tasks.png?branch=master)](https://travis-ci.org/aptible/aptible-tasks)
+
 Shared Rake tasks for Aptible projects.
 
 ## Installation
@@ -20,7 +22,7 @@ Add the following to your Rakefile:
 ## Available Tasks
 
 | Task Name | Purpose |
-| --------- | ------- |
+| ---------:| ------- |
 | `spec` | Runs the spec suite with standard formatting |
 | `rubocop` | Checks code against the Aptible-approved Ruby style guide |
 | `ci` | Runs the suite of tasks performed by continuous integration |
