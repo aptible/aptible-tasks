@@ -1,6 +1,7 @@
 # Aptible::Tasks
 
 [![Build Status](https://travis-ci.org/aptible/aptible-tasks.png?branch=master)](https://travis-ci.org/aptible/aptible-tasks)
+[![Dependency Status](https://gemnasium.com/aptible/aptible-tasks.png)](https://gemnasium.com/aptible/aptible-tasks)
 
 Shared Rake tasks for Aptible projects.
 
