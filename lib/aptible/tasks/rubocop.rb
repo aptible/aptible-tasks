@@ -8,7 +8,7 @@ module Aptible
       end
 
       def config
-        ::Rubocop::Config.load_file(config_file)
+        ::Rubocop::ConfigLoader.load_file(config_file)
       end
 
       def run
