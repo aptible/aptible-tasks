@@ -7,9 +7,10 @@ Shared Rake tasks for Aptible projects.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add these lines to your application's Gemfile. The second line is necessary until bbatsov/rubocop@33ea0a0 is released.
 
     gem 'aptible-tasks'
+    gem 'rubocop', github: 'bbatsov/rubocop'
 
 And then run `bundle install`.
 
