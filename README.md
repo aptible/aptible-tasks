@@ -1,5 +1,6 @@
 # Aptible::Tasks
 
+[![Gem Version](https://badge.fury.io/rb/aptible-tasks.png)](https://rubygems.org/gems/aptible-tasks)
 [![Build Status](https://travis-ci.org/aptible/aptible-tasks.png?branch=master)](https://travis-ci.org/aptible/aptible-tasks)
 [![Dependency Status](https://gemnasium.com/aptible/aptible-tasks.png)](https://gemnasium.com/aptible/aptible-tasks)
 
