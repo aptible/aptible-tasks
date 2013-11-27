@@ -1,6 +1,9 @@
 Documentation:
   Enabled: false
 
+Encoding:
+  Enabled: false
+
 AllCops:
   Includes:
     - !ruby/regexp /\.rb$/
