@@ -10,9 +10,11 @@ module Aptible
     end
 
     def self.clear_task(task_name)
-      if Rake::Task.tasks.map(&:name).include?(task_name.to_s)
-        Rake::Task[task_name].clear
-      end
+      Rake::Task[task_name].clear if task_defined?(task_name)
+    end
+
+    def self.task_defined?(task_name)
+      Rake::Task.tasks.map(&:name).include?(task_name.to_s)
     end
   end
 end
