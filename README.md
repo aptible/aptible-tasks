@@ -22,7 +22,7 @@ Add the following to your Rakefile:
     require 'aptible/tasks'
     Aptible::Tasks.load_tasks
 
-If you're running a Rails app, include the above lines before you load your application's tasks (e.g. `MyApp::Application.load_tasks`).
+If you're running a Rails app, include the above lines after you load your application's tasks (e.g. `MyApp::Application.load_tasks`).
 
 ## Available Tasks
 
