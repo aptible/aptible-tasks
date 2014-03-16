@@ -4,6 +4,9 @@ Documentation:
 Encoding:
   Enabled: false
 
+DoubleNegation:
+  Enabled: false
+
 AllCops:
   Includes:
     - !ruby/regexp /\.rb$/
