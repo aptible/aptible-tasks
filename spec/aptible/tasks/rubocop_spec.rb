@@ -9,8 +9,8 @@ describe Aptible::Tasks::Rubocop do
 
   describe :config do
     it 'contains sane values' do
-      subject.config['Documentation']['Enabled'].should be_false
-      subject.config['AllCops']['Exclude'].should_not be_empty
+      expect(subject.config['Documentation']['Enabled']).to be_false
+      expect(subject.config['AllCops']['Exclude']).not_to be_empty
     end
   end
 end

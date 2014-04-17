@@ -12,7 +12,7 @@ describe 'rake rubocop' do
   its(:prerequisites) { should be_empty }
 
   it 'delegates to ::Rubocop.new.run' do
-    rubocop.should_receive(:run)
+    expect(rubocop).to receive(:run)
     subject.invoke
   end
 end
