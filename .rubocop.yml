@@ -7,6 +7,9 @@ Encoding:
 DoubleNegation:
   Enabled: false
 
+NumericLiterals:
+  Enabled: false
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/

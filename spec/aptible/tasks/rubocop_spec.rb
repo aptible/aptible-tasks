@@ -30,5 +30,9 @@ describe Aptible::Tasks::Rubocop do
       expect(subject.config['Documentation']['Enabled']).to be_false
       expect(subject.config['AllCops']['Exclude']).not_to be_empty
     end
+
+    it 'disables the NumericLiterals cop' do
+      expect(subject.config['NumericLiterals']['Enabled']).to be_false
+    end
   end
 end
