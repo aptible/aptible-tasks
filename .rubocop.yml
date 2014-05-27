@@ -1,3 +1,6 @@
+GuardClause:
+  Enabled: false
+
 Documentation:
   Enabled: false
 
