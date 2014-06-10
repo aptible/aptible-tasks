@@ -21,11 +21,11 @@ module Aptible
       end
 
       def config
-        ::Rubocop::ConfigLoader.load_file(config_file)
+        ::RuboCop::ConfigLoader.load_file(config_file)
       end
 
       def run
-        cli = ::Rubocop::CLI.new
+        cli = ::RuboCop::CLI.new
         result = cli.run(%W( -c #{config_file} ))
         abort unless result == 0
       end

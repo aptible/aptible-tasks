@@ -2,10 +2,10 @@ require 'spec_helper'
 
 describe Aptible::Tasks::Rubocop do
   before do
-    ::Rubocop::CLI.stub(:run)
+    ::RuboCop::CLI.stub(:run)
   end
 
-  its(:config) { should be_a ::Rubocop::Config }
+  its(:config) { should be_a ::RuboCop::Config }
 
   describe :project_config_file do
     let!(:rubocop_yml) { File.join(Dir.pwd, '.rubocop.yml') }
@@ -27,12 +27,12 @@ describe Aptible::Tasks::Rubocop do
 
   describe :config do
     it 'contains sane values' do
-      expect(subject.config['Documentation']['Enabled']).to be_false
+      expect(subject.config['Style/Documentation']['Enabled']).to be_false
       expect(subject.config['AllCops']['Exclude']).not_to be_empty
     end
 
     it 'disables the NumericLiterals cop' do
-      expect(subject.config['NumericLiterals']['Enabled']).to be_false
+      expect(subject.config['Style/NumericLiterals']['Enabled']).to be_false
     end
   end
 end
