@@ -2,12 +2,12 @@ require 'spec_helper'
 
 describe Aptible::Tasks::Rubocop do
   before do
-    ::RuboCop::CLI.stub(:run)
+    allow(::RuboCop::CLI).to receive(:run)
   end
 
   its(:config) { should be_a ::RuboCop::Config }
 
-  describe :project_config_file do
+  describe '#project_config_file' do
     let!(:rubocop_yml) { File.join(Dir.pwd, '.rubocop.yml') }
 
     it 'should return a local .rubocop.yml if present' do
@@ -20,19 +20,19 @@ describe Aptible::Tasks::Rubocop do
     end
 
     it 'should return nil if no file exists' do
-      File.stub(:exist?) { false }
+      allow(File).to receive(:exist?) { false }
       expect(subject.project_config_file).to be_nil
     end
   end
 
-  describe :config do
+  describe '#config' do
     it 'contains sane values' do
-      expect(subject.config['Style/Documentation']['Enabled']).to be_false
+      expect(subject.config['Style/Documentation']['Enabled']).to be false
       expect(subject.config['AllCops']['Exclude']).not_to be_empty
     end
 
     it 'disables the NumericLiterals cop' do
-      expect(subject.config['Style/NumericLiterals']['Enabled']).to be_false
+      expect(subject.config['Style/NumericLiterals']['Enabled']).to be false
     end
   end
 end
