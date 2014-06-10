@@ -8,3 +8,6 @@ end
 
 # Require library up front
 require 'aptible/tasks'
+
+# Require RSpec helper libraries
+require 'rspec/its'

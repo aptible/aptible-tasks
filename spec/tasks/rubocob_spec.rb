@@ -6,7 +6,7 @@ describe 'rake rubocop' do
   let(:rubocop) { double('rubocop') }
 
   before do
-    Aptible::Tasks::Rubocop.stub(new: rubocop)
+    allow(Aptible::Tasks::Rubocop).to receive(:new) { rubocop }
   end
 
   its(:prerequisites) { should be_empty }
