@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.version       = Aptible::Tasks::VERSION
   spec.authors       = ['Frank Macreery']
   spec.email         = ['frank@macreery.com']
-  spec.description   = %q(Shared Rake tasks for Aptible projects.)
-  spec.summary       = %q(Shared Rake tasks for Aptible projects.)
+  spec.description   = 'Shared Rake tasks for Aptible projects'
+  spec.summary       = 'Shared Rake tasks for Aptible projects'
   spec.homepage      = 'https://github.com/aptible/aptible-tasks'
   spec.license       = 'MIT'
 

@@ -13,6 +13,9 @@ DoubleNegation:
 NumericLiterals:
   Enabled: false
 
+FileName:
+  Enabled: false
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/
