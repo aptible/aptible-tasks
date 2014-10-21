@@ -42,6 +42,6 @@ If you're running a Rails app, include the above lines after you load your appli
 
 MIT License, see [LICENSE](LICENSE.md) for details.
 
-Copyright (c) 2013 [Aptible](https://www.aptible.com), [Frank Macreery](https://github.com/fancyremarker), and contributors.
+Copyright (c) 2014 [Aptible](https://www.aptible.com) and contributors.
 
 [<img src="https://s.gravatar.com/avatar/f7790b867ae619ae0496460aa28c5861?s=60" style="border-radius: 50%;" alt="@fancyremarker" />](https://github.com/fancyremarker)
