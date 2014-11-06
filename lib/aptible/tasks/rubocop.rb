@@ -5,7 +5,7 @@ module Aptible
     class Rubocop
       def config_file
         project_config_file ||
-        File.join(File.dirname(__FILE__), '..', '..', '..', '.rubocop.yml')
+          File.join(File.dirname(__FILE__), '..', '..', '..', '.rubocop.yml')
       end
 
       def project_config_file(dir = Dir.pwd)
