@@ -16,6 +16,9 @@ NumericLiterals:
 FileName:
   Enabled: false
 
+AbcSize:
+  Enabled: false
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/
