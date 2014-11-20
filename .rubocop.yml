@@ -31,3 +31,4 @@ AllCops:
     - !ruby/regexp /node_modules\//
     - !ruby/regexp /tmp\//
     - !ruby/regexp /vendor\//
+    - !ruby/regexp /spec/dummy\//
