@@ -19,6 +19,12 @@ FileName:
 AbcSize:
   Enabled: false
 
+PerceivedComplexity:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/
