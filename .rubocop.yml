@@ -25,6 +25,12 @@ PerceivedComplexity:
 CyclomaticComplexity:
   Enabled: false
 
+MethodLength:
+  Enabled: false
+
+ClassLength:
+  Enabled: false
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/
@@ -37,4 +43,5 @@ AllCops:
     - !ruby/regexp /node_modules\//
     - !ruby/regexp /tmp\//
     - !ruby/regexp /vendor\//
+    - !ruby/regexp /cookbooks\//
     - !ruby/regexp /spec/dummy\//
