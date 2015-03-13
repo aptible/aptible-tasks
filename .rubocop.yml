@@ -31,6 +31,9 @@ MethodLength:
 ClassLength:
   Enabled: false
 
+HandleExceptions:
+  Enabled: false
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/
