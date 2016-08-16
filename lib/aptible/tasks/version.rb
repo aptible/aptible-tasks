@@ -1,5 +1,5 @@
 module Aptible
   module Tasks
-    VERSION = '0.5.4'
+    VERSION = '0.5.5'.freeze
   end
 end
