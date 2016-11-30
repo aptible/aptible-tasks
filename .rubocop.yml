@@ -33,7 +33,10 @@ ClassLength:
 
 HandleExceptions:
   Enabled: false
-  
+
+Style/NumericPredicate:
+  Enabled: false
+
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
