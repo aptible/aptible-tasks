@@ -37,6 +37,9 @@ HandleExceptions:
 Style/NumericPredicate:
   Enabled: false
 
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
