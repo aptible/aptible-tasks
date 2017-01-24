@@ -28,6 +28,9 @@ CyclomaticComplexity:
 MethodLength:
   Enabled: false
 
+ModuleLength:
+  Enabled: false
+
 ClassLength:
   Enabled: false
 
