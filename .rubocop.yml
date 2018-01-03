@@ -46,6 +46,9 @@ Style/FrozenStringLiteralComment:
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
+Style/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/

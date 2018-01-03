@@ -1,2 +1,2 @@
 desc 'Run all continuous integration tasks'
-task ci: [:rubocop, :spec]
+task ci: %i[rubocop spec]
