@@ -26,7 +26,7 @@ module Aptible
 
       def run
         cli = ::RuboCop::CLI.new
-        result = cli.run(%W(-c #{config_file}))
+        result = cli.run(%W[-c #{config_file}])
         abort unless result.zero?
       end
     end

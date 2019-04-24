@@ -46,6 +46,34 @@ Style/FrozenStringLiteralComment:
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
+Style/SymbolArray:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Lint/UnneededCopDisableDirective:
+  Enabled: false
+
+Lint/UnneededCopEnableDirective:
+  Enabled: false
+
+Lint/EmptyWhen:
+  Enabled: false
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: 'expanded'
+
+Style/MixinUsage:
+  Enabled: false
+
+
 AllCops:
   Include:
     - !ruby/regexp /\.rb$/
