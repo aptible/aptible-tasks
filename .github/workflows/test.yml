@@ -20,15 +20,8 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Install Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.RUBY_VERSION }}
-          bundler: 1.17.3
-          bundler-cache: true
-
       - name: Rubocop
-        run: bundle exec rake rubocop
+        run: make lint
 
       - name: Rspec
-        run: bundle exec rspec
+        run: make test
