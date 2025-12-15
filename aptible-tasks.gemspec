@@ -20,8 +20,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^spec/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'base64'
-  spec.add_dependency 'ostruct'
   spec.add_dependency 'rake'
   spec.add_dependency 'rubocop', '= 0.62.0'
 
